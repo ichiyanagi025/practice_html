@@ -1,0 +1,82 @@
+@keyframes fuwafuwa {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.container {
+    display: flex;
+}
+.left-wrapper {
+    width: 45vw;
+}
+.name {
+    font-family:'Kiwi Maru', serif;
+    position: relative;
+    font-size: 35px;
+    animation: fuwafuwa 4s 1 forwards;
+}
+.sub{
+    position: relative;
+    left:60px;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 0.5rem;
+    background: #f7f7f7;
+    border-left: solid 6px #58ad5a;
+    color: #58ad5a;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.22);
+}
+.animation {
+    width:100px;
+    height:50px;
+    text-align:center;
+    border:2px solid #BBBBBB;
+    float:left;
+    cursor:pointer;
+    position:relative;
+    top:5.0vh;
+    box-sizing:border-box;
+    overflow:hidden;
+    margin:0 0 40px 0;
+  }
+  .animation a {
+    font-family:arial;
+    font-size:15px;
+    color:#BBBBBB;
+    text-decoration:none;
+    line-height:50px;
+    transition:all .10s ease;
+    z-index:2;
+    position:relative;
+  }
+  .effect {
+    width:140px;
+    height:50px;
+    top:-2px;
+    left:-140px;
+    background:#BBBBBB;
+    position:absolute;
+    transition:all .5s ease;
+    z-index:1;
+  }
+  .animation:hover .effect {
+    left:0;
+  }
+  .animation:hover a {
+    color:#FFFFFF;
+  }
+.right-wrapper {
+    width: 55vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(256, 256, 256, 0.9), rgba(0, 0, 0, 0)),
+    url(../p_html/img/dog.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
